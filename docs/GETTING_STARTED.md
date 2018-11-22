@@ -9,12 +9,12 @@ vendor-specific information.
 
 Power-on the module and:
 
-* Make sure you have Torizon installed. You can install it following the Torizon documentation.
+* Make sure you have Torizon installed. You can install it following the [Torizon documentation](https://labs.toradex.com/projects/torizon).
 * Make sure you have access to the Linux console, either from the debug serial or SSH.
     * For ssh you can use the default tordy credentials - user: `tordy` / password: `tordy`
     * For debug serial you can use the default root credentials - user: `root` / password: empty
 * Make sure that the board is connected to the internet.
-    * You can e.g. ping a known website `ping google.com`
+    * You can e.g. ping a known website `ping google.com`.
 
 Once you are logged in, create a Docker volume to persist data:
 
@@ -59,17 +59,17 @@ This section lists acronyms used in the project context and their meaning.
 which is a technology/configuration of the raw NAND.
 * MLC - [Multi-Level Cell](https://www.micron.com/products/nand-flash/mlc-nand),
 which is a technology/configuration of the raw NAND.
-* EOL - End of Life
+* EOL - End of Life.
 * eMMC - [Embedded MultiMediaCard](https://www.micron.com/products/managed-nand/emmc),
 a type of flash memory.
-* IEC - [International Electrotechnical Commission](https://www.iec.ch/)
-* JEDEC - [Joint Electron Device Engineering Council](https://www.jedec.org/)
+* IEC - [International Electrotechnical Commission](https://www.iec.ch/).
+* JEDEC - [Joint Electron Device Engineering Council](https://www.jedec.org/).
 * kB - [kilobyte](https://en.wikipedia.org/wiki/Kilobyte), usually mistaken
 with KB.
-* KB - [kibibyte](https://en.wikipedia.org/wiki/Kibibyte) in JEDEC format
+* KB - [kibibyte](https://en.wikipedia.org/wiki/Kibibyte) in JEDEC format.
 * KiB - [kibibyte](https://en.wikipedia.org/wiki/Kibibyte) in IEC format. The IEC
 format is adopted by this project for displaying units, e.g. KiB, MiB, GiB, etc.
-* OS - Operating System
+* OS - Operating System.
 
 ## Supported Modules
 
@@ -110,9 +110,10 @@ stages:
 docker volume create flash-data
 ```
 
-Start the container in privileged mode, with a pseudo TTY, bind mount `/dev`
-and `/var/run/dbus`, use the same network as the host and either share the PID
-namespace with the host or get from another container. An example is provided:
+Start the container in privileged mode, with a pseudo TTY, bind mount `/dev`,
+`/var/run/dbus` and `/etc/issue`, use the same network as the host and either
+share the PID namespace with the host or get from another container.
+An example is provided:
 
 For system-wide analysis (using volume to persist data):
 
@@ -144,7 +145,7 @@ docker run -dt --rm --privileged=true \
     toradexlabs/flash-analytics-tool
 ```
 
-For monitoring other container modify the --pid option:
+For monitoring other container, modify the --pid option:
 
 ```
 From --pid=host to --pid=container:<container-name>

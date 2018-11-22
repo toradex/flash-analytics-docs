@@ -32,5 +32,5 @@ API consumed by the remote UI, can be used standalone. Refer to the
 
 ### Flash Write Emulator
 
-Application that writes to the flash, RAM and a TTY devicefor debugging
+Application that writes to the flash, RAM and a TTY device for debugging
 purposes.

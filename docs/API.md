@@ -4,11 +4,11 @@ This readme provides the Flash Analytics Tool Core HTTP API documentation.
 
 # Back-end API reference
 
-The back-end API currently implements three routes - write statistics, lifespan
-information and system information. All endpoints return JSON encoded data.
+The back-end API currently implements the following routes - system information,
+write statistics, settings and lifespan information. All endpoints return JSON
+encoded data.
 
-The API is implemented using Python Flask abstracted by the flask-classful
-library. Following the API calls are described:
+Following the API calls are described:
 
 The JSON are described in the format:
 
@@ -24,7 +24,7 @@ Real data example would be:
 
 ## Base URL
 
-The request should be made to the same IP of the board, currently I'm using:
+The request should be made to the same IP of the board:
 
 `var hostURL = window.location.hostname`
 `"http://" + hostURL`
