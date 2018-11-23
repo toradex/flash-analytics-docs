@@ -1,7 +1,7 @@
 # Flash Analytics Tool
 
-The Flash Anasytics Tool is a means to provide the estimated flash memory
-lifespan of Toradex modules, based in customer usage of the flash. It is 
+The Flash Analytics Tool is a means to provide the estimated flash memory
+lifespan of Toradex modules, based on customer usage of the flash. It is
 suitable for flash usage profiling during development and for predictive
 hardware replacement during the lifespan of the CoM.
 
@@ -17,7 +17,7 @@ The Flash Analytics Tool project comprises a set of modules and tools:
 
 ### Flash Analytics Tool Core
 
-Application that monitors the writes to the flash and the eMMC health status.
+An application that monitors the writes to the flash and the eMMC health status.
 It can monitor overall system writes as well as single application writes.
 
 ### Flash Analytics Tool Remote UI
@@ -32,5 +32,5 @@ API consumed by the remote UI, can be used standalone. Refer to the
 
 ### Flash Write Emulator
 
-Application that writes to the flash, RAM and a TTY device for debugging
+An application that writes to the flash, RAM and a TTY device for debugging
 purposes.
