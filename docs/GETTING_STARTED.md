@@ -11,7 +11,7 @@ Power-on the module and:
 
 * Make sure you have Torizon installed. You can install it following the [Torizon documentation](https://labs.toradex.com/projects/torizon).
 * Make sure you have access to the Linux console, either from the debug serial or SSH.
-    * For ssh you can use the default tordy credentials - user: `tordy` / password: `tordy`
+    * For ssh you can use the default Torizon credentials - user: `torizon` / password: `torizon`
     * For debug serial you can use the default root credentials - user: `root` / password: empty
 * Make sure that the board is connected to the internet.
     * You can e.g. ping a known website `ping google.com`.
