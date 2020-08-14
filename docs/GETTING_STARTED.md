@@ -43,12 +43,12 @@ Get the board IP address:
 ip a show dev eth0
 ```
 
-Access the remote UI from your PC using the URL corresponding to the board IP:
+Access the remote UI from your PC using the URL corresponding to the board IP and port 8811:
 
 ```
 http://<board-ip>
 # For instance, if the board IP is 192.168.10.34
-http://192.168.10.34
+http://192.168.10.34:8811
 ```
 
 # Abbreviation list
